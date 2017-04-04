@@ -13,25 +13,40 @@
       <div class="jumbotron">
         <h1>Get your movie tickets!</h1>
       </div>
-      <form class="">
-        <label for="movie-type">Pick your genre:</label>
-        <select class="genre">
-          <option value="comedy">Comedy</option>
-          <option value="horror">Horror</option>
-          <option value="romance">Romance</option>
-          <option value="action">Action</option>
-          <option value="drama">Drama</option>
-          <option value="documentary">Documentary</option>
-          <option value="sci-fi">Sci-fi</option>
-        </select>
-        <label for="movie-time">Pick your showtime(from our options):</label>
-        <select class="times">
-          <option value="early">Early Morning</option>
-          <option value="mid">Mid Morning</option>
-          <option value="afternoon">Afternoon</option>
-          <option value="late">Late Show</option>
-        </select>
-      </form>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="ticket-form">
+            <label for="movie-type">Pick your genre:</label>
+            <select id="genre">
+              <option value="comedy">Comedy</option>
+              <option value="horror">Horror</option>
+              <option value="romance">Romance</option>
+              <option value="action">Action</option>
+              <option value="drama">Drama</option>
+              <option value="documentary">Documentary</option>
+              <option value="sci-fi">Sci-fi</option>
+            </select>
+            <label for="movie-time">Pick your showtime(from our options):</label>
+            <select id="times">
+              <option value="3">Early Morning</option>
+              <option value="3">Mid Morning</option>
+              <option value="5">Afternoon</option>
+              <option value="5">Late Show</option>
+            </select>
+            <label for="movie-age">How old are you?:</label>
+            <select id="age">
+              <option value="3">Under 4 years of age</option>
+              <option value="5">Between 4 and 17 years of age</option>
+              <option value="5">Between age 18 and 65 years of age</option>
+              <option value="3">Over 65 years of age</option>
+            </select>
+            <button type="submit" class="btn" name="button">What your cost will be:</button>
+          </form>
+          <div class="results">
+            <span id="result-cost"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
